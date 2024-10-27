@@ -2,8 +2,44 @@
 Basic
 =====
 
-hello
+"a"
+42 3.14
+a
+\a
+nil
+true false
+:a
 
 ---
 
-(source_file)
+(source_file
+  (string)
+  (number) (number)
+  (symbol)
+  (character)
+  (nil)
+  (boolean) (boolean)
+  (keyword))
+
+===========
+Collections
+===========
+
+(a b c)
+[a b c]
+{:a 1 :b 2 :c 3}
+#{a b c}
+
+---
+
+(source_file
+  (list
+    (symbol) (symbol) (symbol))
+  (vector
+    (symbol) (symbol) (symbol))
+  (map
+    (keyword) (number)
+    (keyword) (number)
+    (keyword) (number))
+  (set
+    (symbol) (symbol) (symbol)))
